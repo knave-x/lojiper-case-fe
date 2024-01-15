@@ -40,13 +40,13 @@ const TripDetailsPage: React.FC<TripDetailsPageProps> = () => {
   const handleSeatSelection = (seatNo: string) => {
     setSelectedSeats((prevSeats) => {
       if (prevSeats.includes(seatNo)) {
-        // Koltuk zaten seçiliyse kaldır
+       
         return prevSeats.filter((seat) => seat !== seatNo);
       } else if (prevSeats.length < 5) {
-        // Koltuk seçili değilse ve seçili koltuk sayısı 5'ten azsa ekle
+      
         return [...prevSeats, seatNo];
       } else {
-        // Koltuk seçili değilse ve seçili koltuk sayısı 5 ise uyarı ver ve mevcut koltukları döndür
+        
         message.warning('En fazla 5 koltuk seçebilirsiniz!');
         return prevSeats;
       }

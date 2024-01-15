@@ -1,7 +1,5 @@
 import { useContext, useEffect } from "react";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
-import { message } from "antd";
-import unauthorizedPage from "../images/unauthorized.jpeg";
 import { useTranslation } from "react-i18next";
 import React from "react";
 import { UserContext } from "../context/user.context";
