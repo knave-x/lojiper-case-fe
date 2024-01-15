@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "types": ["axios"],
     "lib": [
       "dom",
       "dom.iterable",
